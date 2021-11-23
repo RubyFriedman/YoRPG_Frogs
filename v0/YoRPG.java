@@ -11,8 +11,12 @@
  * (If you feel other changes are merited, note what and why, so that we may discuss on the 'morrow.)
  *
  * DISCO:
- *
+   * The error messages guide you on how each method is used.
+   * creating non-static methods allows them to be used by other classes.
+
  * QCC:
+   * How does try and catch work?
+   * Why do we need to import java.io and java.util, can we not code these ourselves now?
  *
  **********************************************/
 
