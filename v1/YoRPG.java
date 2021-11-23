@@ -11,9 +11,12 @@
  * (If you feel other changes are merited, note what and why, so that we may discuss on the 'morrow.)
  * 
  * DISCO:
- *
+ * Discovered how to use extends when extending a class with a lot of overlap.
+ * Discovered how to create a colaborative repository.
  * QCC:
- * 
+ * Why do we import java.io and java.util?
+ * How do we remove the methods that are in Character.java from Protagonist.java and Monster.java without the code breaking?
+ * Does creating an instance variable without private or public in front of it have it default to private or public?
  **********************************************/
 
 import java.io.*;
