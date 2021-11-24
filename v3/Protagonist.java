@@ -3,7 +3,7 @@
   **/
 
 public class Protagonist extends Character {
-	private String _name;
+	protected String _name;
 
     /**
       default constructor
