@@ -1,10 +1,33 @@
 TNPG: Frogs (Ivina Wang, Samantha Hua, Ruby Friedman)
 APCS
 L01: An Adventurer is You!
-2021-11-23
+2021-11-22
 time spent: 1.0 hrs
 
 So far we believe that we have figured out how inheritance and extensions of classes
 SHOULD work, and we were able to make the Character.java file, but when we attempted
 to remove the overlapping methods in Protagonist.java and Monster.java, the code broke.
 In addition we have been utilizing the colaborative repository quite well.
+
+=================================================
+
+TNPG: Frogs (Ivina Wang, Samantha Hua, Ruby Friedman)
+APCS
+L01: An Adventurer is You!
+2021-11-23
+time spent: 2.5 hrs
+
+In class we learned about the protected variables, which solved our problem about why our
+inheritance/extensions of classes didn't work. (it has been working since v2)
+
+Additionally, we used the protected variables again to add more extensions to class Monster.java
+and Protagonist.java- like Archer.java, Dragon.java, etc. which gave the characters different 
+healths/strengths/defense/attacks.
+
+Using the "\nChoose your diffculty: \n" as a reference, we created a similar selection
+to choose the class for the protagonist and used if statements to create new instance of
+Healer/Knight/Archer to pat.
+
+We also used if statements and Math.random to create new instances of Dragon/Centaur/Zombies
+to samug.
+
