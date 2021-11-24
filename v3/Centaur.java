@@ -6,4 +6,8 @@ public class Centaur extends Monster {
 		attack = 2;
 	}
 	public int getDefense() { return defense; }
+
+	public static String about() {
+		return "The Centaur is a force to be reckoned with, too bad it barely has any defense!";
+	}
 }

@@ -6,4 +6,8 @@ public class Zombies extends Monster {
 		attack = 0.75;
 	}
 	public int getDefense() { return defense; }
+
+	public static String about() {
+		return "The Zombie is the weakest type of Monster, it barely does any damage!";
+	}
 }

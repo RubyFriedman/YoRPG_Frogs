@@ -6,6 +6,16 @@ public class Knight extends Protagonist {
 		attack = 0.6;
 	}
 
+        public Knight( String name ) {
+                this();
+                _name = name;
+        }
+
 	public String getName() {return _name;}
 	public int getDefense() {return defense;}
+
+	public static String about() {
+		return "The Knight has a higher defense and attack, but less health.";
+	}
 }
+
