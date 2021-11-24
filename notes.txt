@@ -2,7 +2,7 @@ TNPG: Frogs (Ivina Wang, Samantha Hua, Ruby Friedman)
 APCS
 L01: An Adventurer is You!
 2021-11-23
-time spent: 3.5 hrs
+total time spent: 3.5 hrs
 
 DISCO:
  * Discovered how to use extends when extending a class with a lot of overlap.
