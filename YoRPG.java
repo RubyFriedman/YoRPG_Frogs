@@ -17,7 +17,7 @@
  * Why do we import java.io and java.util?
  * How do we remove the methods that are in Character.java from Protagonist.java and Monster.java without the code breaking?
  * Does creating an instance variable without private or public in front of it have it default to private or public?
-*********************************************/
+ **********************************************/
 
 import java.io.*;
 import java.util.*;
@@ -33,9 +33,18 @@ public class YoRPG {
   private Protagonist pat;
   private Monster smaug;
 
+  private Healer H;
+  private Knight K;
+  private Archer A;
+
+  private Zombies Z;
+  private Centaur C;
+  private Dragon D;
+
   private int moveCount;
   private boolean gameOver;
   private int difficulty;
+  private int choice;
 
   private InputStreamReader isr;
   private BufferedReader in;
@@ -48,6 +57,7 @@ public class YoRPG {
     gameOver = false;
     isr = new InputStreamReader( System.in );
     in = new BufferedReader( isr );
+    choice = 0;
     newGame();
   }
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -88,8 +98,31 @@ public class YoRPG {
     catch ( IOException e ) { }
 
     //instantiate the player's character
-    pat = new Protagonist( name );
 
+    s = "\n Select your warrior: \n ";
+    s += "\t1: Healer- \t" + H.about() + "\n";
+    s += "\t2: Knight-\t" + K.about() + "\n";
+    s += "\t3: Archer-\t" + A.about() + "\n";
+    s += "Selection: ";
+    System.out.print(s);
+
+    try {
+            choice  = Integer.parseInt( in.readLine() );
+    }
+    catch ( IOException e ) { }
+
+    if (choice == 1) {
+      pat = new Healer( name );
+    }
+    else if (choice == 2) {
+      pat = new Knight( name );
+    }
+    else if (choice == 3) {
+      pat = new Archer( name );
+    }
+    else {
+      pat = new Protagonist( name );
+    }
   }//end newGame()
 
 
@@ -106,9 +139,18 @@ public class YoRPG {
     if ( Math.random() >= ( difficulty / 3.0 ) )
       System.out.println( "\nNothing to see here. Move along!" );
     else {
-      System.out.println( "\nLo, yonder monster approacheth!" );
-
-      smaug = new Monster();
+      if (Math.random() > 0.9) {
+        smaug = new Dragon();
+        System.out.println( "\nLo, yonder monster approacheth! " + D.about());
+      }
+      else if (Math.random() > 0.55) {
+	smaug = new Centaur();
+        System.out.println( "\nLo, yonder monster approacheth! " + C.about());
+      }
+      else {
+	smaug = new Zombies();
+        System.out.println( "\nLo, yonder monster approacheth! " + Z.about());
+      }
 
       while( smaug.isAlive() && pat.isAlive() ) {
 
