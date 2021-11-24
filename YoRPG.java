@@ -9,14 +9,22 @@
  * Code incrementally, testing each bit of new functionality as you go.
  * The only modification you should make to this driver file is moving comment bar down in main method, and filling in DISCO/QCC
  * (If you feel other changes are merited, note what and why, so that we may discuss on the 'morrow.)
- * 
- * DISCO:
+
+DISCO:
  * Discovered how to use extends when extending a class with a lot of overlap.
  * Discovered how to create a colaborative repository.
- * QCC:
+QCC:
  * Why do we import java.io and java.util?
  * How do we remove the methods that are in Character.java from Protagonist.java and Monster.java without the code breaking?
  * Does creating an instance variable without private or public in front of it have it default to private or public?
+OUR DRIVER MODS:
+ * Added the option to choose the type of protagonist including Healer, Archer, and Knight.
+ * Added randomized types of Monsters, including Zombies, Centuar, and the Dragon with varying probability on having to fight
+   each depending on their difficulty level.
+ * Added new private instance variables to use later in the driver file depending on which type of protagonist or monster
+   chose/got.
+ * Printed out the protagonist types and definitions as well as the monster types and definitions.
+
  **********************************************/
 
 import java.io.*;
