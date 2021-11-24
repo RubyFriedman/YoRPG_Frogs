@@ -1,22 +1,19 @@
 /**********************************************
  * class YoRPG -- Driver file for Ye Olde Role Playing Game.
  * Simulates monster encounters of a wandering adventurer.
- * Required classes: Protagonist, Monster
- * 
- * USAGE:
- * Compile. Note messages generated.
- * Devise a plan of attack with your trio.
- * Code incrementally, testing each bit of new functionality as you go.
- * The only modification you should make to this driver file is moving comment bar down in main method, and filling in DISCO/QCC
- * (If you feel other changes are merited, note what and why, so that we may discuss on the 'morrow.)
 
 DISCO:
  * Discovered how to use extends when extending a class with a lot of overlap.
  * Discovered how to create a colaborative repository.
+ * Discovered how to use protected instance variables and why they're important for subclasses.
+ * Discovered how to use try and catch commands to catch all possible outcomes.
+ * Discovered how to effectively use subclasses to simplify and refactor code.
+
 QCC:
- * Why do we import java.io and java.util?
- * How do we remove the methods that are in Character.java from Protagonist.java and Monster.java without the code breaking?
- * Does creating an instance variable without private or public in front of it have it default to private or public?
+ * How do we edit the rarer monsters to be more likely to appear with a higher difficulty?
+ * How do we randomize the attack value for each turn rather than for each monster?
+ * What other types of visability are there other than public, private and protected?
+
 OUR DRIVER MODS:
  * Added the option to choose the type of protagonist including Healer, Archer, and Knight.
  * Added randomized types of Monsters, including Zombies, Centuar, and the Dragon with varying probability on having to fight

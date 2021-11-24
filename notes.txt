@@ -1,23 +1,26 @@
 TNPG: Frogs (Ivina Wang, Samantha Hua, Ruby Friedman)
 APCS
 L01: An Adventurer is You!
-2021-11-22
-time spent: 1.0 hrs
+2021-11-23
+time spent: 3.5 hrs
 
-So far we believe that we have figured out how inheritance and extensions of classes
+DISCO:
+ * Discovered how to use extends when extending a class with a lot of overlap.
+ * Discovered how to create a colaborative repository.
+ * Discovered how to use protected instance variables and why they're important for subclasses.
+ * Discovered how to use try and catch commands to catch all possible outcomes.
+ * Discovered how to effectively use subclasses to simplify and refactor code.
+QCC:
+ * How do we edit the rarer monsters to be more likely to appear with a higher difficulty?
+ * How do we randomize the attack value for each turn rather than for each monster?
+ * What other types of visability are there other than public, private and protected?
+
+11/22/21 So far we believe that we have figured out how inheritance and extensions of classes
 SHOULD work, and we were able to make the Character.java file, but when we attempted
 to remove the overlapping methods in Protagonist.java and Monster.java, the code broke.
 In addition we have been utilizing the colaborative repository quite well.
 
-=================================================
-
-TNPG: Frogs (Ivina Wang, Samantha Hua, Ruby Friedman)
-APCS
-L01: An Adventurer is You!
-2021-11-23
-time spent: 2.5 hrs
-
-In class we learned about the protected variables, which solved our problem about why our
+11/23/21 In class we learned about the protected variables, which solved our problem about why our
 inheritance/extensions of classes didn't work. (it has been working since v2)
 
 Additionally, we used the protected variables again to add more extensions to class Monster.java
